@@ -44,7 +44,7 @@ while running:
     difficulty += 0.004 # we increase the difficulty with each frame
 
     # shows the difficulty that we're on
-    level_surface = level_counter.render(f'Level {math.floor(difficulty)}', True, "black").convert()
+    level_surface = level_counter.render(f'Level {math.floor(difficulty)}', True, "black")
     screen.blit(level_surface, (0,0))
     
     # enemy spawn rate increases with difficulty
